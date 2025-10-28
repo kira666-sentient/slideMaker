@@ -1,0 +1,265 @@
+# ===================================
+# SlideMaker - Root .gitignore
+# ===================================
+
+# ===================================
+# Python (Backend)
+# ===================================
+
+# Virtual Environment
+backend/venv/
+backend/env/
+backend/.venv/
+backend/.env/
+*.pyenv
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+backend/build/
+backend/develop-eggs/
+backend/dist/
+backend/downloads/
+backend/eggs/
+backend/.eggs/
+backend/lib/
+backend/lib64/
+backend/parts/
+backend/sdist/
+backend/var/
+backend/wheels/
+backend/pip-wheel-metadata/
+backend/share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Flask
+instance/
+.webassets-cache
+
+# Jupyter Notebook (if added)
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ===================================
+# Node.js (Frontend)
+# ===================================
+
+# Dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+# Testing
+frontend/coverage/
+
+# Production Build
+frontend/build/
+
+# Environment variables
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Package manager files
+.pnpm-debug.log*
+.yarn-integrity
+
+# ===================================
+# IDE / Editor
+# ===================================
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ IDEA / PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===================================
+# Operating System
+# ===================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+# ===================================
+# Project Specific
+# ===================================
+
+# Temporary PowerPoint files generated during testing
+*.pptx.tmp
+*_modified.pptx
+*_with_*_slides.pptx
+test_*.pptx
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Upload directories (if any)
+uploads/
+downloads/
+
+# ===================================
+# Git
+# ===================================
+
+# Git conflict files
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+
+# ===================================
+# Documentation (Keep these!)
+# ===================================
+
+# Keep all markdown documentation
+!*.md
+!docs/*.md
+!README.md
+
+# Keep batch scripts
+!*.bat
+!setup.bat
+!start.bat
+
+# ===================================
+# Security
+# ===================================
+
+# API keys and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+config.local.json
+
+# Private keys
+*.pem
+*.key
+*.cert
+
+# ===================================
+# Database (if added in future)
+# ===================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================================
+# Misc
+# ===================================
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Large files
+*.large
+
+# System files
+.cache/
