@@ -9,7 +9,7 @@ import traceback
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, expose_headers='Content-Disposition')
 
 # Configuration
 MAX_FILE_SIZE = 50 * 1024 * 1024  # 50MB
@@ -308,11 +308,15 @@ def add_slide():
             print(f"ERROR saving presentation: {str(e)}")
             return jsonify({'error': f'Failed to save presentation: {str(e)}'}), 500
 
+        # Create a new filename for the modified presentation
+        base_name = file.filename.rsplit('.', 1)[0]
+        new_filename = f"{base_name}_updated.pptx"
+
         return send_file(
             output, 
             mimetype='application/vnd.openxmlformats-officedocument.presentationml.presentation',
             as_attachment=True,
-            download_name='presentation_modified.pptx'
+            download_name=new_filename
         )
     
     except ValueError as e:
